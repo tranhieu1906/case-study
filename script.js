@@ -25,7 +25,7 @@ function createCircle() {
 xv = Math.floor(Math.random() * 76 + 25) / 30;
 yv = Math.floor(Math.random() * 76 + 25) / 30;
 
-// const myInterval = setInterval(update, 100);
+const myInterval = setInterval(update, 100);
 function update() {
   bx += xv;
   by += yv;
@@ -51,8 +51,8 @@ function update() {
   if (395 <= by + speed / 2 ){
     yv = -yv;
   }
-  console.log(by + speed)
-  console.log(moveX)
+  console.log(xv)
+  console.log(yv)
   context.fillStyle = "black";
   context.beginPath();
   context.arc(bx, by, 15, 0, 2 * Math.PI);
